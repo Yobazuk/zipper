@@ -1,0 +1,17 @@
+{
+  "name": "zipper-docs",
+  "version": "1.0.0",
+  "description": "Documentation for the Zipper Python package",
+  "type": "module",
+  "scripts": {
+    "docs:dev": "vitepress dev",
+    "docs:build": "vitepress build",
+    "docs:preview": "vitepress preview"
+  },
+  "devDependencies": {
+    "vitepress": "^1.0.0-rc.44",
+    "typescript": "^5.3.0",
+    "@types/node": "^20.0.0",
+    "vue": "^3.4.0"
+  }
+} 

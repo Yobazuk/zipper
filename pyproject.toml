@@ -1,0 +1,23 @@
+[tool.poetry]
+name = "zipper"
+version = "0.1.0"
+description = "A Python package for creating ZIP archives with file and archive comments"
+authors = ["Your Name <your.email@example.com>"]
+readme = "README.md"
+packages = [{include = "zipper"}]
+license = "MIT"
+
+[tool.poetry.dependencies]
+python = "^3.11"
+typer = {extras = ["all"], version = "0.7.0"}
+click = "8.0.4"
+
+[tool.poetry.group.dev.dependencies]
+pytest = "^7.3.1"
+
+[tool.poetry.scripts]
+zipper = "zipper.cli:app"
+
+[build-system]
+requires = ["poetry-core"]
+build-backend = "poetry.core.masonry.api" 
